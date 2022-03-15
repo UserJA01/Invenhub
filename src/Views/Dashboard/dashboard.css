@@ -1,0 +1,55 @@
+#dash-holder{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 100%;
+    row-gap: 25px;
+}
+
+.dash-btn{
+    width: 120px;
+    height: min-content;
+    padding: 10px 0px;
+    font-size: 17px;
+    border-radius: 10px;
+    border-style: solid;
+    border: solid 1px black;
+    margin-left: auto;
+}
+
+.dash-ttl-holder{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+#dash-ttl{
+    width: 100%;
+    text-align: center;
+    background-color: var(--second-bg-color);
+    font-style: italic;
+    padding: 10px 0;
+    border: solid 1px black;
+}
+
+#income{
+    background-color: var(--second-bg-color);
+    font-style: italic;
+    padding: 10px 15px;
+    border: solid 1px black;
+    width: min-content;
+    white-space: nowrap;
+}
+
+#dash-opts{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dash-opt-btn{
+    width: 30%;
+    max-width: 350px;
+    min-height: 300px;
+}

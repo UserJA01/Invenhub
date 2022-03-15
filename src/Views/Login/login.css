@@ -1,0 +1,36 @@
+#login-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+}
+
+#lg-ttl{
+    font-size: 100px;
+}
+
+.lg-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    min-width: max-content;
+}
+
+.lg-form > input {
+    font-size: 15px;
+    padding: 10px;
+    width: 400px;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.lg-form > button {
+    width: 150px;
+    padding: 15px 0px;
+    font-size: 17px;
+    border-radius: 10px;
+    border-style: solid;
+    border: solid 1px black;
+}
