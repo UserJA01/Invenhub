@@ -1,4 +1,4 @@
-#login-holder{
+#login-holder {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,11 +6,11 @@
     row-gap: 25px;
 }
 
-#lg-ttl{
+#lg-ttl {
     font-size: 100px;
 }
 
-.lg-form{
+.lg-form {
     display: flex;
     flex-direction: column;
     align-items: center;

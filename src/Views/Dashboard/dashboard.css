@@ -1,4 +1,4 @@
-#dash-holder{
+#dash-holder {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -6,7 +6,7 @@
     row-gap: 25px;
 }
 
-.dash-btn{
+.dash-btn {
     width: 120px;
     height: min-content;
     padding: 10px 0px;
@@ -17,14 +17,14 @@
     margin-left: auto;
 }
 
-.dash-ttl-holder{
+.dash-ttl-holder {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
 }
 
-#dash-ttl{
+#dash-ttl {
     width: 100%;
     text-align: center;
     background-color: var(--second-bg-color);
@@ -33,7 +33,7 @@
     border: solid 1px black;
 }
 
-#income{
+#income {
     background-color: var(--second-bg-color);
     font-style: italic;
     padding: 10px 15px;
@@ -42,14 +42,22 @@
     white-space: nowrap;
 }
 
-#dash-opts{
+#dash-opts {
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
 }
 
-.dash-opt-btn{
+.dash-opt {
     width: 30%;
     max-width: 350px;
     min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dash-opt-btn {
+    width: 100%;
+    height: 150px;
 }
