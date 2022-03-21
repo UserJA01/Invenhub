@@ -1,14 +1,29 @@
-#inv-holder {
+#ext-holder {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 50px;
     row-gap: 50px;
+}
 
+#ext-holder > p {
+    font-style: italic;
+}
+
+.ext-table-side {
+    width: 49%;
     overflow-y: auto;
 }
 
-#inv-search-bar {
+.ext-tables {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 60%;
+}
+
+#ext-search-bar {
     display: flex;
     background-color: white;
     padding: 0px 10px;
@@ -19,94 +34,114 @@
     border: solid black 1px;
 }
 
-#inv-search-bar > input {
+#ext-search-bar > input {
     border: none;
     height: 30px;
     width: 100%;
 }
 
-#inv-table {
+#ext-search-bar > input {
+    border: none;
+    height: 30px;
+    width: 100%;
+}
+
+#ext-table {
     width: 100%;
     table-layout: fixed;
     border-collapse: separate;
     border-spacing: 0;
+    display: inline-table;
+    height: min-content;
 }
 
-#inv-tbody > tr > th {
+#ext-table > caption {
+    font-size: large;
+}
+
+#ext-tbody > tr > th {
     background-color: dimgray;
     padding: 5px;
     border-top: solid black 1px;
 }
 
-#inv-nombre,
-#inv-uid {
+#ext-nombre,
+#ext-uid {
     width: 25%;
 }
 
-#inv-cantidad,
-#inv-precio {
+#ext-cantidad,
+#ext-precio {
     width: 15%;
 }
 
-#inv-eliminar,
-#inv-agregar {
+#ext-eliminar,
+#ext-agregar {
     width: 10%;
 }
 
-#inv-tbody > tr:nth-of-type(even) {
+#ext-tbody > tr:nth-of-type(even) {
     background-color: white;
 }
 
-#inv-tbody > tr:nth-of-type(odd):not(:first-child) {
+#ext-tbody > tr:nth-of-type(odd):not(:first-child) {
     background-color: darkgray;
 }
 
-#inv-tbody > tr > td {
+#ext-tbody > tr > td {
     padding: 2.5px;
 }
 
-.inv-col {
+.ext-col {
     white-space: nowrap;
 }
 
-#inv-tbody > tr > th,
-#inv-tbody > tr > td {
+.ext-btn {
+    width: 130px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border-style: solid;
+    border: solid 1px black;
+}
+
+#ext-tbody > tr > th,
+#ext-tbody > tr > td {
     border-left: solid black 1px;
     border-bottom: solid black 1px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-#inv-tbody > tr > th:last-child,
-#inv-tbody > tr > td:last-child {
+#ext-tbody > tr > th:last-child,
+#ext-tbody > tr > td:last-child {
     border-right: solid black 1px;
 }
 
-#inv-tbody > tr:not(:first-child) > td:nth-last-child(-n + 2) {
+#ext-tbody > tr:not(:first-child) > td:nth-last-child(-n + 2) {
     text-align: center;
 }
 
-#inv-tbody > tr > th:first-child {
+#ext-tbody > tr > th:first-child {
     border-radius: 15px 0px 0px 0px;
 }
 
-#inv-tbody > tr > th:last-child {
+#ext-tbody > tr > th:last-child {
     border-radius: 0px 15px 0px 0px;
 }
 
-#inv-tbody > tr:last-child {
+#ext-tbody > tr:last-child {
     border-radius: 0px 0px 15px 15px;
 }
 
-#inv-tbody > tr:last-child > td:last-child {
+#ext-tbody > tr:last-child > td:last-child {
     border-radius: 0px 0px 15px 0px;
 }
 
-#inv-tbody > tr:last-child > td:first-child {
+#ext-tbody > tr:last-child > td:first-child {
     border-radius: 0px 0px 0px 15px;
 }
 
-.inv-col > button {
+.ext-col > button {
     border: none;
     background-color: transparent;
     width: 100%;

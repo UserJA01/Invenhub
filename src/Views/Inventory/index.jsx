@@ -19,44 +19,46 @@ function Inventory() {
                 <input type='text' placeholder='Buscar' />
             </span>
             <table id='inv-table'>
-                <tr className='inv-row'>
-                    <th className='inv-col' id='inv-nombre'>
-                        Nombre
-                    </th>
-                    <th className='inv-col' id='inv-uid'>
-                        UID
-                    </th>
-                    <th className='inv-col' id='inv-cantidad'>
-                        Cantidad
-                    </th>
-                    <th className='inv-col' id='inv-precio'>
-                        Precio
-                    </th>
-                    <th className='inv-col' id='inv-eliminar'>
-                        Eliminar
-                    </th>
-                    <th className='inv-col' id='inv-agregar'>
-                        Agregar
-                    </th>
-                </tr>
-                {inventoryItems.map((item, i) => (
-                    <tr className='inv-row' key={item.UID + i}>
-                        <td className='inv-col'>{item.nombre}</td>
-                        <td className='inv-col'>{item.UID}</td>
-                        <td className='inv-col'>{item.cantidad}</td>
-                        <td className='inv-col'>{"$" + item.precio}</td>
-                        <td className='inv-col'>
-                            <button>
-                                <AiFillStop style={icoStyle} />
-                            </button>
-                        </td>
-                        <td className='inv-col'>
-                            <button>
-                                <AiFillPlusCircle style={icoStyle} />
-                            </button>
-                        </td>
+                <tbody id='inv-tbody'>
+                    <tr className='inv-row'>
+                        <th className='inv-col' id='inv-nombre'>
+                            Nombre
+                        </th>
+                        <th className='inv-col' id='inv-uid'>
+                            UID
+                        </th>
+                        <th className='inv-col' id='inv-cantidad'>
+                            Cantidad
+                        </th>
+                        <th className='inv-col' id='inv-precio'>
+                            Precio
+                        </th>
+                        <th className='inv-col' id='inv-eliminar'>
+                            Eliminar
+                        </th>
+                        <th className='inv-col' id='inv-agregar'>
+                            Agregar
+                        </th>
                     </tr>
-                ))}
+                    {inventoryItems.map((item, i) => (
+                        <tr className='inv-row' key={item.UID + i}>
+                            <td className='inv-col'>{item.nombre}</td>
+                            <td className='inv-col'>{item.UID}</td>
+                            <td className='inv-col'>{item.cantidad}</td>
+                            <td className='inv-col'>{"$" + item.precio}</td>
+                            <td className='inv-col'>
+                                <button>
+                                    <AiFillStop style={icoStyle} />
+                                </button>
+                            </td>
+                            <td className='inv-col'>
+                                <button>
+                                    <AiFillPlusCircle style={icoStyle} />
+                                </button>
+                            </td>
+                        </tr>
+                    ))}
+                </tbody>
             </table>
         </div>
     );
