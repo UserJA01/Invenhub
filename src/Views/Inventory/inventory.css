@@ -1,0 +1,114 @@
+#inv-holder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    row-gap: 50px;
+
+    overflow-y: auto;
+}
+
+#inv-search-bar {
+    display: flex;
+    background-color: white;
+    padding: 0px 10px;
+    width: 100%;
+    border-radius: 50px;
+    column-gap: 10px;
+    align-items: center;
+    border: solid black 1px;
+}
+
+#inv-search-bar > input {
+    border: none;
+    height: 30px;
+    width: 100%;
+}
+
+#inv-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#inv-table > tr > th {
+    background-color: dimgray;
+    padding: 5px;
+    border-top: solid black 1px;
+}
+
+#inv-nombre,
+#inv-uid {
+    width: 25%;
+}
+
+#inv-cantidad,
+#inv-precio {
+    width: 15%;
+}
+
+#inv-eliminar,
+#inv-agregar {
+    width: 10%;
+}
+
+#inv-table > tr:nth-of-type(even) {
+    background-color: white;
+}
+
+#inv-table > tr:nth-of-type(odd):not(:first-child) {
+    background-color: darkgray;
+}
+
+#inv-table > tr > td {
+    padding: 2.5px;
+}
+
+.inv-col {
+    white-space: nowrap;
+}
+
+#inv-table > tr > th,
+#inv-table > tr > td {
+    border-left: solid black 1px;
+    border-bottom: solid black 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#inv-table > tr > th:last-child,
+#inv-table > tr > td:last-child {
+    border-right: solid black 1px;
+}
+
+#inv-table > tr:not(:first-child) > td:nth-last-child(-n + 2) {
+    text-align: center;
+}
+
+#inv-table > tr > th:first-child {
+    border-radius: 15px 0px 0px 0px;
+}
+
+#inv-table > tr > th:last-child {
+    border-radius: 0px 15px 0px 0px;
+}
+
+#inv-table > tr:last-child {
+    border-radius: 0px 0px 15px 15px;
+}
+
+#inv-table > tr:last-child > td:last-child {
+    border-radius: 0px 0px 15px 0px;
+}
+
+#inv-table > tr:last-child > td:first-child {
+    border-radius: 0px 0px 0px 15px;
+}
+
+.inv-col > button {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
