@@ -101,6 +101,12 @@
             "UID": "234235",
             "cantidad": 112,
             "precio": 1234
+        },
+        {
+            "nombre": "Galletas Sabritas",
+            "UID": "234235",
+            "cantidad": 112,
+            "precio": 1234
         }
     ]
 }
